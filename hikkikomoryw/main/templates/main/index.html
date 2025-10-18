@@ -1,0 +1,29 @@
+{% extends 'main/shablon.html' %}
+
+
+
+{% block title %}
+    Фильмы
+{% endblock%}
+
+
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p> Главная страница</p>
+
+
+
+
+
+        <a href="{% url 'news_home' %}">
+    <li>
+        <button class="btn btn-primary" style="background-color: purple; border-color: purple;">
+            Анонсы фильмов
+        </button>
+    </li>
+</a>
+
+
+    </div>
+{% endblock %}
